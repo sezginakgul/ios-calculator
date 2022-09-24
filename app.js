@@ -2,9 +2,9 @@ const action = document.querySelector(".action");
 const screen = document.querySelector(".screen");
 const screen2 = document.querySelector(".screen2");
 
-let num1 = "";
+let num1 = 0;
 let islem = "";
-let num2 = "";
+let num2 = 0;
 let sonuc = "";
 
 action.addEventListener("click", (e) => {
@@ -25,12 +25,22 @@ action.addEventListener("click", (e) => {
   }
 
   if (e.target.classList.contains("num")) {
-    screen.textContent += e.target.innerText;
-    num2 = screen.textContent;
+    if (screen.textContent.includes(".")) {
+      screen.textContent += e.target.innerText;
+      num2 = screen.textContent;
+    } else if (screen.textContent == 0) {
+      screen.textContent = "";
+      screen.textContent += e.target.innerText;
+      num2 = screen.textContent;
+    } else {
+      screen.textContent += e.target.innerText;
+      num2 = screen.textContent;
+    }
   }
 
   if (e.target.classList.contains("operator")) {
-    if (num1 && num2) {
+    if (num1 == 0 && num2 == 0) {
+    } else if (num1 && num2) {
       num1 = fSonuc();
       screen2.textContent += screen.innerText;
       num2 = screen.innerText;
@@ -43,13 +53,27 @@ action.addEventListener("click", (e) => {
       screen2.textContent += screen.innerText;
       elseİf(e);
       screen.innerText = "";
+    } else if (!num2) {
+      num1 = screen.textContent;
+      num2 = 0;
+      screen2.textContent += screen.innerText;
+      islem = "";
+      elseİf(e);
+      screen.innerText = "";
     }
   }
 
   if (e.target.classList.contains("equal")) {
-    resetScreen();
-    screen.innerText = fIslem(islem);
-    resetNumber();
+    if (num1 == 0 && num2 == 0) {
+      screen.innerText = 0;
+    } else if (num1 == 0) {
+      screen.innerText = screen.innerText;
+    } else {
+      resetScreen();
+      screen.innerText = fIslem(islem);
+      num1 = screen.innerText;
+      num2 = 0;
+    }
   }
 
   if (e.target.classList.contains("funcMod")) {
