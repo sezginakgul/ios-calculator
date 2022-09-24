@@ -40,7 +40,7 @@ ios-calculator (folder)
 - Live: [Live Website](https://sezginakgul.github.io/ios-calculator/)
 
 
-## Steps to Solution
+### Steps to Solution
 
 >>Part-1 HTML Structure
 
