@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 45px;
+  font-size: 1.3rem;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
 
 .key {
   color: white;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -34,6 +34,14 @@ body {
   background-color: #333;
 }
 
+.point {
+  background-color: #333;
+}
+
+.equal {
+  background-color: #333;
+}
+
 .operator {
   background-color: #f1a33c;
 }
@@ -42,26 +50,23 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 10px;
+  gap: 5px;
 }
 
 .calculator {
   background-color: black;
-  width: 500px;
-  height: 840px;
-  padding: 20px;
-  border-radius: 50px;
+  height: 500px;
+  padding: 15px;
+  border-radius: 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-  /* justify-content: center; */
-  /* align-items: flex-end; */
 }
 
 .key-0 {
   grid-column: 1 / span 2;
-  width: 215px;
+  width: 126px;
   border-radius: 55px;
   justify-content: left;
   padding-left: 0.9rem;
@@ -72,9 +77,28 @@ body {
 }
 
 .screen {
-  width: 450px;
-  height: 800px;
-  border-radius: 30px;
-  background-color: #a5a5a58f;
-  margin-bottom: 0.7rem;
+  width: 250px;
+  font-size: 2rem;
+  height: 60px;
+  justify-content: end;
+  margin-bottom: 0.3rem;
+  color: white;
+  display: flex;
+  padding-right: 15px;
+}
+.screen2 {
+  width: 250px;
+  font-size: 1.8rem;
+  height: 60px;
+  justify-content: end;
+  align-items: flex-end;
+  color: white;
+  display: flex;
+  opacity: 0.5;
+  padding-right: 15px;
+}
+
+.apple {
+  color: white;
+  margin-top: -1.2rem;
 }
