@@ -55,10 +55,6 @@ action.addEventListener("click", (e) => {
   if (e.target.classList.contains("funcMod")) {
     screen.innerText = parseFloat(Number(screen.innerText) / 100);
   }
-
-  console.log("Num1:" + num1);
-  console.log("islem:" + islem);
-  console.log("num2:" + num2);
 });
 
 const elseİf = (e) => {
