@@ -46,6 +46,10 @@ body {
   background-color: #f1a33c;
 }
 
+.equal {
+  background-color: #f1a33c;
+}
+
 .action {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
