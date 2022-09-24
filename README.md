@@ -7,6 +7,7 @@
   - [Project Skeleton](#project-skeleton)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Steps to Solution](#steps-to-solution)
 - [My process](#my-process)
   - [Built with](#built-with)
 
@@ -23,18 +24,36 @@ Your company has recently started on a project that aims to create ios calculato
 ```
 ios-calculator (folder)
         |----index.html 
-        |----style.css                   
+        |----style.css
+        |----app.js
+        |----apple.svg
 ```
 ### Screenshot
 
 <p align="center">
-<a href="https://sezginakgul.github.io/ios-calculator/"><img src="calculator.PNG" alt="screenshot" width="100%"></a>
+<a href="https://sezginakgul.github.io/ios-calculator/"><img src="apple.gif" alt="screenshot" width="100%"></a>
 </p>
 
 
 ### Links
 
 - Live: [Live Website](https://sezginakgul.github.io/ios-calculator/)
+
+
+## Steps to Solution
+
+>>Part-1 HTML Structure
+	- Creat structure of the HTML5
+	- Give name of your project (title)
+	- Create the main structur of the HTML
+
+>>Part-2 CSS Structure
+	- Set a background
+	- Set container background color and margin
+	- Define others color-size-padding etc...
+
+>>Part-3 JS Structure
+	- Create code for calculator
 
 
 ### Built with
@@ -52,4 +71,7 @@ ios-calculator (folder)
 - CSS Properties for Texts-Font Families-Links
 - CSS Overflow Property-The float Property-Opacity 
 - Transparency-Units in CSS
-- CSS Setting height and width-CSS Outline-CSS Combinators
+- Javascript DOM
+- Javascript Events
+- Javascript Functions
+- Comments
